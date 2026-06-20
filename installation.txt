@@ -1,0 +1,19 @@
+pip install --pre torch --index-url https://download.pytorch.org/whl/nightly/cu130
+
+pip install --pre torchao --index-url https://download.pytorch.org/whl/nightly/cu130
+
+pip install \
+    diffusers==0.38.0 \
+    transformers==4.57.1 \
+    accelerate==1.14.0 \
+    sentencepiece \
+    protobuf \
+    av \
+    imageio-ffmpeg
+
+
+pip install "flash-attn-4[cu13]==4.0.0b18" --prerelease=allow
+
+pip install \
+    nvidia-cutlass-dsl==4.5.2 \
+    nvidia-cutlass-dsl-libs-base==4.5.2
